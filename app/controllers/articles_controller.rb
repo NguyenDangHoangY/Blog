@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @author = Author.find(@article.author_id)
   end
 
   def new
