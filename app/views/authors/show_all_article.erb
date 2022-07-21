@@ -1,6 +1,5 @@
-<h1>Articles</h1>
-
-<p> <%= @author.name %></P>
+<span>All articles of </span>
+<span> <%= @author.name %></span>
 <ul>
   <% @author.articles.each do |article| %>
     <% unless article.archived? %>
