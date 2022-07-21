@@ -1,7 +1,9 @@
 <h1><%= @article.title %></h1>
 
 <h2><%= @author.name %></h2>
-<%= link_to 'See all article of this author', show_all_articles_path(@author) %>
+
+<span><%= link_to 'about the author', about_path(@author) %></span>
+<span><%= link_to 'See all article of this author', show_all_articles_path(@author) %></span>
 <p><%= @article.body %></p>
 
 <ul>
