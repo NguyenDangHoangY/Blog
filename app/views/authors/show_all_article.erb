@@ -1,4 +1,4 @@
-<span>All articles of </span>
+<span>All Articles of </span>
 <span> <%= @author.name %></span>
 <ul>
   <% @author.articles.each do |article| %>
@@ -9,3 +9,5 @@
     <% end %>
   <% end %>
 </ul>
+
+<p><%= link_to "All Authors", authors_path %></p>
