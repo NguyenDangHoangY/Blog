@@ -3,8 +3,8 @@
 
 <h2><%= @author.name %></h2>
 
-<span><%= link_to 'about the author', author_path %></span>
-<span><%= link_to 'See all article of this author', show_all_articles_path(@author) %></span>
+<span><%= link_to 'About the Author', author_path %></span>
+<span><%= link_to 'See all Article of this Author', show_all_articles_path(@author) %></span>
 <p><%= @article.body %></p>
 
 <ul>
@@ -18,5 +18,5 @@
 <h2>Comments</h2>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h2>Add a comment: </h2>
 <%= render 'comments/form' %>
