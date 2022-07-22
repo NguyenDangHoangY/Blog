@@ -1,10 +1,10 @@
 <h1><%= link_to "Peter Magazine", articles_path%></h1>  
 <h1><%= @article.title %></h1>
-
-<h2><%= @author.name %></h2>
-
-<span><%= link_to 'About the Author', author_path %></span>
-<span><%= link_to 'See all Article of this Author', show_all_articles_path(@author) %></span>
+<div style="border: 1px solid black;">
+  <h2><%= @author.name %></h2>
+  <span><%= link_to 'About the Author', author_path(@author) %></span>
+  <span><%= link_to 'See all Article of this Author', show_all_articles_path(@author) %></span>
+</div>
 <p><%= @article.body %></p>
 
 <ul>
