@@ -7,6 +7,14 @@
 
 <p><%= @author.about %></p>
 
+<ul>
+  <li><%= link_to "Edit", edit_author_path %></li>
+  <li><%= link_to "Destroy", author_path(@author), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+
 <p><%= link_to "Edit", edit_author_path %></p>
 <p><%= link_to "All Arthors", authors_path %></p>
 
